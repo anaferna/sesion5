@@ -8,15 +8,15 @@
     /* Contenedor de la cuadrícula */
     .grid-container {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;  /* Tres columnas iguales */
-      gap: 10px;
+      grid-template-columns: 1fr 2fr 1fr;  /* Cuatro columnas iguales */
+      gap: 20px;
       padding: 10px;
-      background-color: lightgray;
+      background-color: rgb(252, 213, 213);
     }
 
     /* Estilos de los elementos de la cuadrícula */
     .grid-item {
-      background-color: lightcoral;
+      background-color: rgb(156, 88, 88);
       padding: 20px;
       text-align: center;
       border: 1px solid black;
@@ -32,14 +32,14 @@
     /* Media query para pantallas entre 801px y 1200px de ancho */
     @media (min-width: 801px) and (max-width: 1200px) {
       .grid-container {
-        grid-template-columns: 1fr 1fr;  /* Dos columnas iguales */
+        grid-template-columns: 1fr 1 fr 1fr;  /* Tres columnas iguales */
       }
     }
 
     /* Media query para pantallas de más de 1200px de ancho */
     @media (min-width: 1201px) {
       .grid-container {
-        grid-template-columns: 1fr 1fr 1fr;  /* Tres columnas iguales */
+        grid-template-columns: 1fr 2fr 1fr;  /* Cuatro columnas iguales */
       }
     }
   </style>
